@@ -43,6 +43,19 @@
       font-size: 17px;
       padding: 5px;
       color: var(--text-color);
+      position: relative;
+
+      &::before {
+        box-sizing: border-box;
+        content: "";
+        top: 9px;
+        left: -16px;
+        position: absolute;
+        border-radius: 50px;
+        width: 15px;
+        height: 15px;
+        background-color: var(--first-color);
+      }
     }
   }
 }
